@@ -1,0 +1,7 @@
+{
+  "name": "manime-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
