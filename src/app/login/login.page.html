@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Manime</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="login-container">
+    <h2>Login to account</h2>
+    <p>Enter your email and password</p>
+
+    <ion-item>
+      <ion-input type="email" placeholder="email@domain.com" [(ngModel)]="email" name="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="password" [(ngModel)]="password" name="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" (click)="onLogin()">Login</ion-button>
+
+    <p class="or-text">or login using</p>
+    <ion-button expand="block" color="light">
+      <ion-img src="assets/google-logo.png"></ion-img> Google
+    </ion-button>
+
+    <p>
+      If you don't have an account,
+      <a routerLink="/signup">Create one here</a>
+    </p>
+
+    <p class="guest-text">
+      ...Or to continue as a guest tap <a href="#">here</a>
+    </p>
+  </div>
+</ion-content>
