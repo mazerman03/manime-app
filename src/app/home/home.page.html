@@ -1,6 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Home</ion-title>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="menu"></ion-icon> <!-- Replace "menu" with your icon name -->
+      </ion-button>
+    </ion-buttons>
+
+
+    <ion-title class="ion-text-center">Manime</ion-title>
+  
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="ellipse"></ion-icon> <!-- Replace "settings" with your icon name -->
+      </ion-button>
+    </ion-buttons>
+  
+  
+  
   </ion-toolbar>
 </ion-header>
 
@@ -10,4 +26,8 @@
       <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  
+    <app-tabs></app-tabs>
+  
 </ion-content>
