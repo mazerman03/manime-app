@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-anime-list',
   templateUrl: './anime-list.page.html',
   styleUrls: ['./anime-list.page.scss'],
